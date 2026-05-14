@@ -67,6 +67,9 @@
                 box.style.backgroundColor = color;
                 box.style.boxShadow = `0px 0px 15px ${color}`
 
+                
+            })
+            box.addEventListener("mouseout", ()=>{
                 setTimeout(() => {
                     box.style.backgroundColor = "#1f1f1f";
                     box.style.boxShadow = "none"
@@ -86,9 +89,6 @@
 
             return color;
         }
-
-        console.log(getRandomColor());
-
     </script>
 
 </body>
