@@ -25,9 +25,8 @@
             width: 18px;
             height: 18px;
             background-color: #1f1f1f;
-            border: 1px solid #0d0d0d;
             border-radius: 2px;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            transition: background-color 1s ease, box-shadow 1s ease;
         }
     </style>
 </head>
@@ -37,23 +36,15 @@
     <div class="container"></div>
 
     <script>
-
         const container = document.querySelector(".container");
-
         for (let i = 1; i <= 800; i++) {
-
             const box = document.createElement("div");
-
             box.classList.add("square");
-
             container.appendChild(box);
-
-            box.addEventListener("mouseover", () => {
+            box.addEventListener("mouseenter", () => {
                 let color = getRandomColor();
-
                 box.style.backgroundColor = color;
                 box.style.boxShadow = `0px 0px 15px ${color}`
-
 				setTimeout(() => {
                     box.style.backgroundColor = "#1f1f1f";
                     box.style.boxShadow = "none"
@@ -62,18 +53,13 @@
         }
 
         function getRandomColor() {
-
             let letters = "0123456789ABCDEF";
-
             let color = "#";
-
             for (let i = 0; i < 6; i++) {
                 color += letters[Math.floor(Math.random() * 16)];
             }
             return color;
         }
     </script>
-
 </body>
-
 </html>
