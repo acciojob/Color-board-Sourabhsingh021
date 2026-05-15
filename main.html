@@ -6,39 +6,28 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             width: 100vw;
             height: 100vh;
-
             background-color: #111111;
-
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
         .container {
-
             height: 100vh;
             display: grid;
             grid-template-columns: repeat(40, 18px);
             gap: 2px;
             padding: 10px 15px;
-
         }
-
         .square {
             width: 18px;
             height: 18px;
-
             background-color: #1f1f1f;
-
             border: 1px solid #0d0d0d;
-
             border-radius: 2px;
-            transition: background-color 1s ease,
-                box-shadow 1s ease;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
     </style>
 </head>
@@ -69,8 +58,6 @@
                     box.style.backgroundColor = "#1f1f1f";
                     box.style.boxShadow = "none"
                 }, 1000)
-
-                
             })
         }
 
@@ -83,7 +70,6 @@
             for (let i = 0; i < 6; i++) {
                 color += letters[Math.floor(Math.random() * 16)];
             }
-
             return color;
         }
     </script>
