@@ -1,1 +1,28 @@
 /*  your css code here. If applicable */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #111111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(40, 18px);
+	gap: 2px;
+	padding: 10px 15px;
+}
+.square {
+	width: 18px;
+	height: 18px;
+	background-color: #1f1f1f;
+	border-radius: 2px;
+	transition: background-color 1s ease, box-shadow 1s ease;
+}
