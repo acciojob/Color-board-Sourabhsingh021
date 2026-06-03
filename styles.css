@@ -12,17 +12,16 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-.container {
-	height: 100vh;
-	display: grid;
-	grid-template-columns: repeat(40, 18px);
-	gap: 2px;
-	padding: 10px 15px;
+..container{
+    display:flex;
+    flex-wrap:wrap;
+    max-width:500px;
 }
-.square {
-	width: 18px;
-	height: 18px;
-	background-color: #1f1f1f;
-	border-radius: 2px;
-	transition: background-color 1s ease, box-shadow 1s ease;
+
+.square{
+    width:16px;
+    height:16px;
+    background-color:#1d1d1d;
+    margin:2px;
+    transition: background-color 1s ease, box-shadow 1s ease;
 }
